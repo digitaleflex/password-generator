@@ -11,6 +11,8 @@ import { Switch } from '@/components/ui/switch';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
+
+
 export default function Home() {
   const [passwords, setPasswords] = useState([{ value: '', length: 12, hasNumbers: false, hasSymbols: false, hasUppercase: false }]);
   const [customSymbols, setCustomSymbols] = useState('!@#$%^&*()_+-=[]{}|;:,.<>?');
