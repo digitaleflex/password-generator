@@ -26,7 +26,7 @@ Générateur de Mot de Passe est une application web qui permet aux utilisateurs
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/generate-password.git
+   git clone https://github.com/digitaleflex/generate-password.git
    cd generate-password
    ```
 
