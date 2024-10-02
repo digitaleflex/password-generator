@@ -39,7 +39,7 @@ export default function Home() {
             />
             <span className="text-sm text-gray-600 mt-1 block text-center">{length} caractères</span>
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <input
               id="hasNumbers"
@@ -48,11 +48,11 @@ export default function Home() {
               onChange={(e) => setHasNumbers(e.target.checked)}
               className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
-            <label htmlFor="hasNumbers" className="text-lg font-medium text-gray-700 cursor-pointer">
+            <label htmlFor="hasNumbers" className="text-lg font-medium text-gray-700 cursor-pointer hover:text-blue-600 transition duration-200">
               Inclure des chiffres
             </label>
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <input
               id="hasSymbols"
@@ -61,19 +61,19 @@ export default function Home() {
               onChange={(e) => setHasSymbols(e.target.checked)}
               className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
-            <label htmlFor="hasSymbols" className="text-lg font-medium text-gray-700 cursor-pointer">
+            <label htmlFor="hasSymbols" className="text-lg font-medium text-gray-700 cursor-pointer hover:text-blue-600 transition duration-200">
               Inclure des symboles
             </label>
           </div>
-          
+
           <button
             onClick={generatePassword}
             className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition duration-300 font-semibold shadow-md flex items-center justify-center space-x-2"
           >
-            <RefreshCw className="w-5 h-5" />
+            <RefreshCw className="w-5 h-5 animate-spin" />
             <span>Générer le mot de passe</span>
           </button>
-          
+
           {password && (
             <div className="mt-6 bg-gray-50 p-4 rounded-md shadow-inner border border-gray-300 relative">
               <p className="text-lg font-mono text-gray-700">Mot de passe généré :</p>
@@ -87,9 +87,9 @@ export default function Home() {
               </button>
             </div>
           )}
-          
+
           {copied && (
-            <Alert variant="success" className="mt-4">
+            <Alert variant="success" className="mt-4 animate-fade-out">
               <AlertDescription>Mot de passe copié dans le presse-papiers!</AlertDescription>
             </Alert>
           )}

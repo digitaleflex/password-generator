@@ -76,3 +76,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 2s forwards;
+}
